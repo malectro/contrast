@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="index.css">
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
+  <script src="bower_components/backbone.localStorage/backbone.localStorage.js"></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <h1>News - Backbone</h1>
+  <main></main>
+
+  <script id="tpl-news" type="text/template">
+    <form id="create"></form>
+    <div id="list"></div>
+  </script>
+
+  <script id="tpl-create" type="text/template">
+    <input type="text" name="url" class="<%- t.urlClass %>" placeholder="Post a link" />
+    <input type="text" name="title" placeholder="With an optional title" />
+    <input type="submit" value="Post" />
+  </script>
+
+  <script id="tpl-list" type="text/template">
+    <% _.each(t.items, function (item) { %>
+      <div class="news-item">
+        <h3><a class="news-item-link" href="<%- item.url %>"><%- item.title %></a></h3>
+      </div>
+    <% }); %>
+  </script>
+
+</body>
+</html>
