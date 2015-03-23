@@ -1,0 +1,13 @@
+{
+  "name": "news-react",
+  "version": "0.0.0",
+  "authors": [
+    "Kyle Warren <qarren@gmail.com>"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "~0.13.1",
+    "underscore": "~1.8.2"
+  }
+}
