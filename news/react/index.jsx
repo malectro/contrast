@@ -13,9 +13,11 @@ var Data = {
   },
 
   id: (function () {
-    var id = 0;
+    var id = parseInt(localStorage.id, 10) || 0;
     return function () {
-      return ++id;
+      id++;
+      localStorage.id = id;
+      return id;
     };
   })(),
 };
