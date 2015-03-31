@@ -5,7 +5,7 @@ Each app attempts to use best practices for its given engine but should neverthe
 Currently "News" is the only app. It lets you post links with optional titles.
 
 
-## The Frameworks
+## Installing Frameworks
 
 ### React
 React is a newer framework created by Facebook that emphasizes client-side simplicity.
@@ -44,4 +44,30 @@ Then you'll be able to run the server with
 gulp serve
 ```
 which should automatically open a new browser tab.
+
+
+## Final Thoughts
+The goal here is to write a blog post, but I'll summarize things in the README.
+
+First off, all three of these frameworks are great in their own way, but if that
+sounds a little coppy-outy I'll admit that I plan on using React for my next large
+project for a few reasons:
+
+1. Speed.
+    Before taking this little project on, I hadn't written any React, but it was
+    by far the quickest to use for a bunch of reasons I'll list below.
+2. Simplicity.
+    React is a bit of an "a la carte" framework in that it doesn't force you to
+    use anything for persistence or routing; it just handles view rendering. It
+    also avoids introducing vocabular beyond everyday CS words like "class",
+    "state", and "render". I found it super easy to learn the ins and outs of it
+    within the span of a half hour.
+3. Unidirection.
+    Okay, so it introduces *some* vocabulary, but after debugging hundreds of
+    production Backbone issues, I found React's approach to rendering to be
+    very clean.
+3. Support.
+    This is isn't something React can hold over Angular (or Backbone for that matter),
+    but it needs to be said that Facebook and Instagram will be supporting it going
+    forward.
 
