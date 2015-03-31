@@ -25,8 +25,23 @@ hot as it once was.
 No need to run a server. Just open the ```news/backbone/index.html``` file.
 
 ### Angular
-Angular is currently the star athlete of the JS world and comes chock full of features
+Angular is currently the star athlete of the JS world and comes chocked full of features
 and paradigms that emphasize reusable and modular code. Unfortunately it
 also comes with a ton of obtuse vocabulary.
 
-I haven't implemented an Angular app yet but will soon.
+In the spirit of doing things the "hot" way, I chose to generate the app with Yeoman's gulp-angular generator.
+This requires a bit more installation and creates a *lot* more files. To run the server you'll need to do the
+following.
+
+```
+cd news/angular
+npm install -g bower gulp
+npm install && bower install
+```
+
+Then you'll be able to run the server with
+```
+gulp serve
+```
+which should automatically open a new browser tab.
+
